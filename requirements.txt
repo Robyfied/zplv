@@ -1,2 +1,3 @@
 pandas
 tabula-py
+requests
