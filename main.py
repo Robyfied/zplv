@@ -30,7 +30,7 @@ else:
         dif_print = "+0.0"
 
     if Progress().days_until_vacation() == 0:
-        output.write(textwrap.dedent(f"""
+        text = textwrap.dedent(f"""
             [{dt.date.today().strftime("%d.%m.%Y")}]    
             // ziua {Progress().school_days(dt.date.today())} de scoala//
                             
@@ -38,9 +38,11 @@ else:
             * Incidenta azi: {inc_azi} ({dif_print})
 
             Anul scolar: {Progress().progress_bar(dt.date.today())}
-        """))
-    if dif < 0:
-        text = f"""
+        """)
+        print(text)
+        output.write(text)
+    else:
+        text = textwrap.dedent(f"""
                 [{dt.date.today().strftime("%d.%m.%Y")}]    
                 // ziua {Progress().school_days(dt.date.today())} de scoala//
                                 
@@ -48,6 +50,7 @@ else:
                 * Incidenta azi: {inc_azi} ({dif_print})
 
                 Anul scolar: {Progress().progress_bar(dt.date.today())}
-                """
-        output.write(textwrap.dedent(text))
+                """)
+        print(text)
+        output.write(text)
 output.close()
