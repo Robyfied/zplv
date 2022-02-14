@@ -5,7 +5,7 @@ from scripts.zplv import Progress
 import datetime as dt
 from pandas import errors as PandasErrors
 ####
-####  CA SA MODIFICI PENTRU ANUL URMATOR SCHIMBA IN scripts/zplv.py LINIILE 
+####  CA SA MODIFICI PENTRU ANUL URMATOR MODIFICA IN scripts/zplv.py LINIILE 35, 36, 38, 51, 57 SI 63
 ####
 
 output = open("output.txt", "w", encoding="utf-8")

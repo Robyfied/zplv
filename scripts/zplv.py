@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 ####
-#### CA SA MODIFICI PENTRU ANUL URMATOR SCHIMBA LINIILE 
+#### CA SA MODIFICI PENTRU ANUL URMATOR MODIFICA LINIILE 35, 36, 38, 51, 57 SI 63
 ####
 
 class Scraper:
@@ -22,8 +22,6 @@ class Scraper:
                 pdf = open("./downloads/" + _pdf_name, "wb")
                 pdf.write(r.content)
                 pdf.close()
-
-                #converts to csv and deletes original pdf
                 tabula.convert_into("./downloads/" + _pdf_name, "./downloads/" + _csv_name, output_format="csv", pages='all',  java_options="-Dfile.encoding=UTF8")
                 os.remove("./downloads/" + _pdf_name)
 
