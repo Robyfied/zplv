@@ -5,7 +5,11 @@ how far into the school year you are (only works for the current day)
 # DISCLAIMER
 The schoolyear this currently works for is 2021 - 2022. I will likely update it yearly until 2023 - 2024 as that is when I will graduate from high school
 
-# RUNNING THE PROGRAM
+# REQUIREMENTS
+python (preferably 3.10.0 or later as this was the latest version when I wrote this)
+Java/JDK (tabula uses Java)
+
+# RUNNING THE SCRIPT
 1. Clone the repository
 2. open console in root folder
 3. install dependencies (**REQUIRES PIP**)
@@ -16,5 +20,3 @@ The schoolyear this currently works for is 2021 - 2022. I will likely update it 
     ```terminal
     $ python main.py
     ```
-# REQUIREMENTS
-python (preferably 3.10.0 or later as this was the latest version when I wrote this)
