@@ -10,6 +10,8 @@ import pandas as pd
 
 class Scraper:
     def get_incidenta(self, _date: dt.date):
+        if not os.path.isdir("./downloads"):
+            os.mkdir("downloads")
         _csv_name = "incidenta-" + str(_date) + ".csv"
         if not os.path.isfile("./downloads/" + _csv_name):
             _pdf_name = "INCIDENTA-JUDETUL-GALATI-" + str(_date.strftime("%d.%m.%Y")) + ".pdf"
