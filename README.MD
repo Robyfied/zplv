@@ -6,8 +6,8 @@ how far into the school year you are (only works for the current day)
 The schoolyear this currently works for is 2021 - 2022. I will likely update it yearly until 2023 - 2024 as that is when I will graduate from high school
 
 # REQUIREMENTS
-python (preferably 3.10.0 or later as this was the latest version when I wrote this)
-Java/JDK (tabula uses Java)
+* python (preferably 3.10.0 or later as this was the latest version when I wrote this)
+* Java/JDK (tabula uses Java)
 
 # RUNNING THE SCRIPT
 1. Clone the repository
