@@ -1,5 +1,4 @@
 import textwrap
-from turtle import towards
 from scripts.zplv import Scraper
 from scripts.zplv import Progress
 import datetime as dt
